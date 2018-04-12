@@ -43,8 +43,8 @@ display = Xvfb()
 if will_show_chrome != 'y':
     display.start()
 
-path = "chromedriver"
-paper_path = "mid.txt"
+path = "./chromedriver"
+paper_path = os.path.abspath('mid.txt')
 
 browser = webdriver.Chrome(executable_path=path)
 
