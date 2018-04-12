@@ -47,5 +47,5 @@ directly applied on attention maps during training stage.
 ```
 and run
 ```
-python transPDF.py
+python3 transPDF.py
 ```
