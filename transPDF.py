@@ -44,7 +44,7 @@ if will_show_chrome != 'y':
     display.start()
 
 path = "/home/tyq/Software/Chrome/chromedriver"
-paper_path = "/home/tyq/Documents/Paper/TranslateSHELL/mid.txt"
+paper_path = "mid.txt"
 
 browser = webdriver.Chrome(executable_path=path)
 
