@@ -43,7 +43,7 @@ display = Xvfb()
 if will_show_chrome != 'y':
     display.start()
 
-path = "/home/tyq/Software/Chrome/chromedriver"
+path = "chromedriver"
 paper_path = "mid.txt"
 
 browser = webdriver.Chrome(executable_path=path)
