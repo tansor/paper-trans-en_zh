@@ -8,6 +8,8 @@ pip install xvfbwrapper
 ```
 Download [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) and put it in the same folder or just use the one I support. You can also change the path in transPDF.py
 
+And also, you should make sure you can touch https://translate.google.com/?tr=f&#en/zh-CN/
+
 ## word-replacer.txt
 Feel free to add your word map in word-replacer.txt
 
