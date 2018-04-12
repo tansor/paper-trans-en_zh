@@ -3,7 +3,7 @@
 ## Dependence
 ``` Shell
 pip install selenium
-sudo apt install Xvfb
+sudo apt install xvfb
 pip install xvfbwrapper
 ```
 Download [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) and put it in the same folder or just use the one I support. You can also change the path in transPDF.py
