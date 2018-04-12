@@ -16,27 +16,34 @@ Feel free to add your word map in word-replacer.txt
 ## Run it !
 First you should create a txt from PDF. Name it as 'raw.txt', such as:
 ```
-Weakly supervised learning with only coarse labels can
-obtain visual explanations of deep neural network such as
-attention maps by back-propagating gradients. These at-
-tention maps are then available as priors for tasks such as
-object localization and semantic segmentation. In one com-
-mon framework we address three shortcomings of previous
-approaches in modeling such attention maps: We (1) first
-time make attention maps an explicit and natural compo-
-nent of the end-to-end training, (2) provide self-guidance di-
-rectly on these maps by exploring supervision form the net-
-work itself to improve them, and (3) seamlessly bridge the
-gap between using weak and extra supervision if available.
-Despite its simplicity, experiments on the semantic segmen-
-tation task demonstrate the effectiveness of our methods.
-We clearly surpass the state-of-the-art on Pascal VOC 2012
-val. and test set. Besides, the proposed framework pro-
-vides a way not only explaining the focus of the learner
-but also feeding back with direct guidance towards specific
-tasks. Under mild assumptions our method can also be un-
-derstood as a plug-in to existing weakly supervised learners
-to improve their generalization performance.
+1. Introduction
+
+Weakly supervised learning [3, 26, 33, 35] has recently
+gained much attention as a popular solution to address la-
+beled data scarcity in computer vision. Using only image
+level labels for example, one can obtain attention maps for a
+given input with back-propagation on a Convolutional Neu-
+ral Network (CNN). These maps relate to the network’s re-
+sponse given specific patterns and tasks it was trained for.
+The value of each pixel on an attention map reveals to what
+extent the same pixel on the input image contributes to the
+final output of the network. It has been shown that one
+can extract localization and segmentation information from
+such attention maps without extra labeling effort.
+
+However, supervised by only classification loss, atten-
+tion maps often only cover small and most discriminative
+regions of object of interest [11, 28, 38]. While these at-
+tention maps can still serve as reliable priors for tasks like
+segmentation [12], having attention maps covering the tar-
+get foreground objects as complete as possible can further
+boost the performance. To this end, several recent works ei-
+ther rely on combining multiple attention maps from a net-
+work via iterative erasing steps [31] or consolidating atten-
+tion maps from multiple networks [11]. Instead of passively
+exploiting trained network attention, we envision an end-to-
+end framework with which task-specific supervision can be
+directly applied on attention maps during training stage.
 ```
 and run
 ```
