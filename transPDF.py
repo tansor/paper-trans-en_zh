@@ -38,7 +38,7 @@ f_out.close()
 
 ###### google translate
 
-will_show_chrome = input("Will show Chrome? y/[n] : ")
+will_show_chrome = input("Show chrome? y/[n] : ")
 display = Xvfb()
 if will_show_chrome != 'y':
     display.start()
@@ -86,7 +86,7 @@ for i in range(0, len(f_list)):
     print(f_list[i]+"\n"+trans[i]+"\n") # Because print create a '\n'
 f_out.close()
 
-will_remove_files = input("Will remove raw.txt and mid.txt. [y]/n : ")
+will_remove_files = input("Remove raw.txt and mid.txt. [y]/n : ")
 if will_remove_files != 'n':
     os.remove("raw.txt")
     os.remove("mid.txt")
